@@ -24,7 +24,7 @@ fn parse_banks(toy: bool) -> Vec<Bank> {
         .lines()
         .map(|l| {
             l.chars()
-                .map(|c| c.to_digit(10).expect("u16 parse failed"))
+                .map(|c| c.to_digit(10).expect("digit parse failed"))
                 .collect()
         })
         .collect()
