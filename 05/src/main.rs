@@ -35,7 +35,6 @@ impl State {
             // for each range, consider each range after it (so each pair is done just once)
             // check if they can be merged, throwing out the ones that are merged into current
             for i in 0..range_count {
-                // for (i, cur_range) in cur_ranges.iter_mut().enumerate() {
                 let Some(mut cur_r) = cur_ranges[i].clone() else {
                     continue;
                 };
